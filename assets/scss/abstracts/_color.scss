@@ -1,0 +1,76 @@
+$background-color-transparent: transparent;
+$background-color-lemonchiffon: #fff5c9;
+$background-color-gray95: #f2f2f2;
+
+$border-color-lightorange: #f56434;
+
+$color-primary: #009688;
+$color-secondary: #546e7a;
+$color-success: #28a745;
+$color-info: #17a2b8;
+$color-warning: #ffc107;
+$color-danger: #dc3545;
+$color-light: #f8f9fa;
+$color-dark: #343a40;
+$color-alert: #be3131;
+
+$color-swamp: #2d2e2e;
+$color-crusta: #f48553;
+$color-vividorange: #fcd313;
+$color-raven: #68717c;
+$color-gray: #808080;
+$color-vividredorange: #f56423;
+$color-nobel: #a0a0a0;
+$color-brown: #9d2121;
+$color-red: red;
+// Background Colors
+$color-light-0: #ffffff;
+$color-light-1: #f6f6f6;
+$color-light-2: #eeeeee;
+$color-light-3: #d8d8d8;
+$color-light-4: #979797;
+$color-light-5: #343741;
+$color-light-6: #4a4a4a;
+$color-light-7: #040000;
+$color-blue: #0069b1;
+$color-light-blue: #3369b1;
+$color-button-blue: #007ad9;
+$color-light-9: #999999;
+
+$colors: (
+    primary: $color-primary,
+    secondary: $color-secondary,
+    success: $color-success,
+    info: $color-info,
+    warning: $color-warning,
+    danger: $color-danger,
+    light: $color-light,
+    dark: $color-dark,
+    light-9: $color-light-9,
+    button-blue: $color-button-blue,
+);
+
+$backgrounds: (
+    blue: $color-blue,
+    light-blue: $color-light-blue,
+    light-0: $color-light-0,
+    light-1: $color-light-1,
+    light-2: $color-light-2,
+    light-3: $color-light-3,
+    light-4: $color-light-4,
+    light-5: $color-light-5,
+    light-6: $color-light-6,
+);
+
+$opacities: (
+    10: 0.1,
+    20: 0.2,
+    30: 0.3,
+    40: 0.4,
+    50: 0.5,
+    60: 0.6,
+    70: 0.7,
+    80: 0.8,
+    90: 0.9,
+    100: 1,
+);

@@ -1,0 +1,43 @@
+$spacing-xs: 2px;
+$spacing-sm: 4px;
+$spacing-md: 8px;
+$spacing-ln: 12px;
+$spacing-lg: 16px;
+$spacing-xl: 20px;
+$spacing-30: 30px;
+$spacing-45: 40px;
+
+$spacing-px: (
+    xs: $spacing-xs,
+    sm: $spacing-sm,
+    ln: $spacing-ln,
+    md: $spacing-md,
+    lg: $spacing-lg,
+    xl: $spacing-xl,
+    30: $spacing-30,
+    45: $spacing-45,
+);
+
+$spacing-10: 10%;
+$spacing-20: 20%;
+$spacing-30: 30%;
+$spacing-40: 40%;
+$spacing-50: 50%;
+$spacing-60: 60%;
+$spacing-70: 70%;
+$spacing-80: 80%;
+$spacing-90: 90%;
+$spacing-100: 100%;
+
+$spacing-percent: (
+    10: $spacing-10,
+    20: $spacing-20,
+    30: $spacing-30,
+    40: $spacing-40,
+    50: $spacing-50,
+    60: $spacing-60,
+    70: $spacing-70,
+    80: $spacing-80,
+    90: $spacing-90,
+    100: $spacing-100,
+);
