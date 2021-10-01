@@ -1,0 +1,75 @@
+<div class="main-content">
+  <div class="background-content">
+    <div class="background-overlay"></div>
+  </div>
+</div>
+<div class="p-mt-1 caption-block">
+  <div class="caption p-d-flex p-jc-center p-ai-center p-flex-column p-flex-wrap">
+    <div class="title text-center text-ln">{{ configuration.companyName }} Collections</div>
+    <div class="title-description text-center p-mt-3">Shop the Collections</div>
+  </div>
+</div>
+<div class="p-mt-3 container">
+  <div class="category-block">
+    <div class="heading-content">
+      Shop By Category
+    </div>
+    <div class="text-center p-mt-2">
+      Shop based on the category
+    </div>
+    <div class="p-d-flex p-jc-center p-ai-center p-flex-wrap p-mt-3 p-mb-3">
+      <div class="p-mr-3 p-mt-3 box" *ngFor="let category of categoryList;">
+          <div class="p-d-flex p-jc-center p-flex-nowrap category p-flex-column">
+            <div class="category-icon p-mb-3 item-hover" *ngIf="category.icon">
+              <i [class]="category.icon"></i>
+            </div>
+            <div class="category-name">
+              {{ category.label }}
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <p-divider class="p-mt-3 p-mb-3"></p-divider>
+</div>
+<div class="p-mt-3 p-mb-3">
+  <div class="parallex-block">
+    <div class="parallex-img" [ngStyle]="{'background-image': 'url('+carousel[1].previewImageSrc+')'}">
+      <div class="caption">
+        {{ carousel[1].title }}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="p-mt-3 container">
+  <div class="category-block">
+    <div class="heading-content">
+      Top Product
+    </div>
+    <div class="text-center p-mt-2">
+      Top Selling Product
+    </div>
+    <div class="p-d-flex p-jc-center p-ai-center p-flex-wrap p-mt-3 p-mb-3">
+      <div class="p-mr-3 p-mt-3 p-shadow-2 positionRelative" *ngFor="let product of productList;">
+          <p-badge [value]="product.available" [severity]="(product.stock === 0 ? 'danger' : (product.stock > 0 && product.stock < 5) ? 'warning' : 'success')" [styleClass]="'positionAbsoulte zIndex99 alignRight'"></p-badge>
+          <div class="p-d-flex p-jc-center p-flex-nowrap product-card p-flex-column">
+            <div class="item-hover product-image">
+              <img [src]="product.imageURL" [title]="product.label" [alt]="product.label">
+            </div>
+            <div class="p-mt-1 product-amount">
+              {{ product.amount | currency:'INR' }}
+            </div>
+            <div class="p-mt-1 product-info text-bold">
+              {{ product.label }}
+            </div>
+            <div class="p-mt-3 p-mb-2 product-button">
+              <button pButton pRipple type="button" icon="pi pi-info" class="p-button-rounded p-button-info p-button-outlined p-mr-1" tilte="Detail"></button>
+              <button pButton pRipple type="button" icon="fas fa-cart-plus" class="p-button-rounded p-button-success p-button-outlined p-mr-1" title="Add To Cart"></button>
+              <button pButton pRipple type="button" icon="pi pi-star-o" class="p-button-rounded p-button-help p-button-outlined p-mr-1" title="Add to Wishlist"></button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <p-divider class="p-mt-3 p-mb-3"></p-divider>
+</div>

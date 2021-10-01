@@ -1,0 +1,99 @@
+@import '../variables';
+
+/* Text Color */
+@each $color, $value in $colors {
+    .text-#{'' + $color} {
+        color: $value !important;
+    }
+}
+
+/* Text Color */
+@each $color, $value in $backgrounds {
+    .text-#{'' + $color} {
+        color: $value !important;
+    }
+}
+
+/* Text Size */
+@each $size, $value in $font-size {
+    .text-#{'' + $size} {
+        font-size: $value !important;
+    }
+}
+
+/* Text Weight */
+@each $weight, $value in $font-weight {
+    .text-weight-#{'' + $weight} {
+        font-weight: $value !important;
+    }
+}
+
+/* Text Diavlo */
+.text-diavlo {
+    font-family: 'Diavlo', Fallback, sans-serif !important;
+}
+
+// @font-face {
+//     font-family: 'Diavlo';
+// }
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.text-ellipsis {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-bolder {
+    font-weight: bolder;
+}
+
+.text-line {
+    text-decoration: line-through;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-blue {
+    color: $font-blue;
+}
+
+.text-red {
+    color: $color-danger !important;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+.break-word {
+    word-break: break-word !important;
+}

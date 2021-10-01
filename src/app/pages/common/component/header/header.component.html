@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="p-d-flex p-flex-column p-flex-md-row opening-info p-jc-center p-jc-md-between text-center p-flex-wrap">
+    <div class="p-mt-3 text-light-4">
+      <i class="pi pi-phone"></i><span class="margin-left-sm text-light-3 text-xs">+918884444616, +918884444626</span>
+    </div>
+    <div class="p-mt-3 text-light-4">
+      <i class="pi pi-clock margin-left-lg"></i><span class="margin-left-sm text-light-3 text-xs">All Week from 9 am to 9 pm</span>
+    </div>
+    <div class="text-light-4 social-media p-mt-3">
+      <a [href]="configuration.facebook" *ngIf="configuration.facebook" target="_blank">
+        <span class="margin-left-md facebook"><i class="fab fa-facebook-f"></i></span>
+      </a>
+      <a [href]="configuration.twitter" *ngIf="configuration.twitter" target="_blank">
+        <span class="text-xs margin-left-md twitter"><i class="pi pi-twitter"></i></span>
+      </a>
+      <a [href]="configuration.google" *ngIf="configuration.google" target="_blank">
+        <span class="text-xs margin-left-md google"><i class="pi pi-google"></i></span>
+      </a>
+      <a [href]="configuration.instagram" *ngIf="configuration.instagram" target="_blank">
+        <span class="margin-left-md instagram"><i class="fab fa-instagram"></i></span>
+      </a>
+    </div>
+  </div>
+  <div class="p-d-flex p-ai-center p-jc-between main-menu p-mt-3">
+    <div class="p-order-1 p-order-sm-2 text-light-2">
+      <p-menubar [model]="menuItem"></p-menubar>
+    </div>
+    <div class="p-order-2 p-order-sm-1">
+      <img src="assets/img/logo/logo.jpg" [alt]="configuration.companyName" [title]="configuration.companyName" height="50" class="p-mr-2 logo" />
+    </div>
+    <div class="p-order-3 text-light-4">
+      <i class="pi pi-search p-mr-2"></i>
+      <input type="text" pInputText placeholder="Search" class="search-field">
+    </div>
+  </div>
+<div>

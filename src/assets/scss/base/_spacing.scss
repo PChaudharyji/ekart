@@ -1,0 +1,77 @@
+@import '../variables';
+
+/* Padding */
+.padding-0 {
+    padding: 0 !important;
+}
+.padding-top-0 {
+    padding-top: 0 !important;
+}
+.padding-bottom-0 {
+    padding-bottom: 0 !important;
+}
+.padding-left-0 {
+    padding-left: 0 !important;
+}
+.padding-right-0 {
+    padding-right: 0 !important;
+}
+
+@each $space, $value in $spacing-px {
+    .padding-#{'' + $space} {
+        padding: $value !important;
+    }
+    .padding-bottom-#{'' + $space} {
+        padding-bottom: $value !important;
+    }
+    .padding-horizontal-#{'' + $space} {
+        padding: 0 $value !important;
+    }
+    .padding-left-#{'' + $space} {
+        padding-left: $value !important;
+    }
+    .padding-right-#{'' + $space} {
+        padding-right: $value !important;
+    }
+    .padding-top-#{'' + $space} {
+        padding-top: $value !important;
+    }
+    .padding-vertical-#{'' + $space} {
+        padding: $value 0 !important;
+    }
+}
+
+/* Margin */
+.margin-0 {
+    margin: 0 !important;
+}
+.margin-top-0 {
+    margin-top: 0 !important;
+}
+.margin-bottom-0 {
+    margin-bottom: 0 !important;
+}
+
+@each $space, $value in $spacing-px {
+    .margin-#{'' + $space} {
+        margin: $value !important;
+    }
+    .margin-bottom-#{'' + $space} {
+        margin-bottom: $value !important;
+    }
+    .margin-horizontal-#{'' + $space} {
+        margin: 0 $value !important;
+    }
+    .margin-left-#{'' + $space} {
+        margin-left: $value !important;
+    }
+    .margin-right-#{'' + $space} {
+        margin-right: $value !important;
+    }
+    .margin-top-#{'' + $space} {
+        margin-top: $value !important;
+    }
+    .margin-vertical-#{'' + $space} {
+        margin: $value 0 !important;
+    }
+}

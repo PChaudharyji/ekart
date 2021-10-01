@@ -1,0 +1,104 @@
+.center {
+    display: block;
+    margin: auto auto;
+}
+
+.h-fit {
+    height: fit-content;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.h-100p {
+    height: 100%;
+}
+
+.width-100p {
+    width: 100%;
+}
+
+.width-45p {
+    width: 45% !important;
+}
+
+.width-48p {
+    width: 48% !important;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.w-100vh {
+    width: 100vh;
+}
+
+.display-inline {
+    display: inline-block;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.display-flex-inline {
+    display: inline-flex;
+}
+
+.align-end-flex {
+    align-items: flex-end;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.width80p {
+    width: 80%;
+}
+
+.floatR {
+    float: right !important;
+}
+
+.floatL {
+    float: left !important;
+}
+.clear {
+    clear: both !important;
+}
+
+.positionRelative {
+    position: relative;
+}
+
+.positionAbsoulte {
+    position: absolute;
+}
+
+.zIndex99{
+  z-index: 99;
+}
+
+.alignRight{
+  right: 0;
+}
+
+.customer-input-block input[type='text'] {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.light-border {
+    border: 1px solid $color-light-3;
+}

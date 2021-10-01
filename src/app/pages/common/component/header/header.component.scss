@@ -1,0 +1,84 @@
+@import '../../../../../assets/scss/variables';
+
+.container{
+  z-index: 99;
+  height: 20vh;
+}
+.social-media{
+  span{
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+  }
+  .instagram, .facebook{
+    font-size: 18px;
+  }
+  span:hover{
+    cursor: pointer;
+  }
+  .facebook:hover{
+    color: #4267B2;
+  }
+  .twitter:hover{
+    color: #1DA1F2;
+  }
+  .google:hover{
+    color: #3cba54;
+  }
+  .instagram:hover{
+    color: #8a3ab9;
+  }
+}
+
+.logo {
+  border-radius: 50%;
+}
+
+.search-field{
+  border-bottom: 1px solid #ffffff;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  background: initial;
+  padding: 5px;
+  color: #ffffff;
+}
+
+:host ::ng-deep {
+  .p-menubar{
+    background: none;
+    border: none;
+    font-size: 12px;
+  }
+
+  .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link, .p-menubar .p-menuitem-link .p-menuitem-text, .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-icon, .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-submenu-icon, .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-text, .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link:not(.p-disabled):hover .p-menuitem-text{
+    color: $color-light-3 !important;
+  }
+
+  .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:not(.p-disabled):hover{
+    background: none;
+  }
+
+  .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link:not(.p-disabled):hover{
+    background: #eaeaea;
+  }
+
+  .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link, .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link:not(.p-disabled):hover{
+    color: $color-light-7 !important;
+  }
+
+  .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link:focus{
+    box-shadow: none;
+  }
+
+  .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link, .p-menubar .p-menuitem-active .p-menuitem-link .p-menuitem-text, .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-icon, .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link .p-submenu-icon, .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-text, .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link:not(.p-disabled):hover .p-menuitem-text {
+    color: $color-light-7 !important;
+  }
+
+  @media screen and (max-width: 960px){
+    .p-menubar ul{
+      min-width: 75vw;
+    }
+  }
+}
