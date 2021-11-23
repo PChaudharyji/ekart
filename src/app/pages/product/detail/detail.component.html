@@ -1,0 +1,31 @@
+<div class="product-block padding-md">
+    <div class="flex">
+        <div class="product-image width-48p">
+            <div class="">
+                <p-galleria [value]="images" [responsiveOptions]="responsiveOptions" [numVisible]="5" [autoPlay]="true">
+                    <ng-template pTemplate="item" let-item>
+                        <img [src]="item.image" [alt]="item.alt" width="auto" style="height: 70vh"/>
+                    </ng-template>
+                    <ng-template pTemplate="thumbnail" let-item>
+                        <div class="p-grid p-nogutter p-justify-center">
+                            <img [src]="item.thumbnail" style="display: block;" width="80px"/>
+                        </div>
+                    </ng-template>
+                </p-galleria>          
+            </div>
+        </div>
+        <div class="product-detail">
+            <div class="padding-left-md">
+                <div class="text-xl">Exclusive Hookah</div>
+                <div class="margin-top-md rating-block flex text-sm" style="align-items: center;">
+                    <p-tag value="4.4" icon="pi pi-star" severity="success"></p-tag>
+                </div>
+                <div class="margin-top-lg price-block flex" style="align-items: center;">
+                    <div class="text-lg">{{ 300 | currency: 'INR' }}</div>
+                    <div class="text-ln text-secondary text-line-through padding-left-lg">{{ 5000 | currency: 'INR' }}</div>
+                    <p-badge [value]="'81%'" [severity]="'success'" class="margin-left-lg"></p-badge>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

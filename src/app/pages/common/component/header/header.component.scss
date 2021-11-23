@@ -1,8 +1,11 @@
 @import '../../../../../assets/scss/variables';
 
+.header-background .container{
+  height: auto;
+}
+
 .container{
   z-index: 99;
-  height: 20vh;
 }
 .social-media{
   span{
@@ -50,6 +53,12 @@
     background: none;
     border: none;
     font-size: 12px;
+
+    .p-menubar-button {
+      .pi.pi-bars{
+        color: $color-light-3 !important;
+      }
+    }
   }
 
   .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link, .p-menubar .p-menuitem-link .p-menuitem-text, .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-icon, .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-submenu-icon, .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-text, .p-menubar .p-menubar-root-list > .p-menuitem.p-menuitem-active > .p-menuitem-link:not(.p-disabled):hover .p-menuitem-text{

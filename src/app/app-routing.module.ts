@@ -12,6 +12,12 @@ const routes: Routes = [
           ),
   },
   {
+      path: 'product/:id',
+      canActivate: [AuthGuard],
+      loadChildren: () =>
+          import('./pages/product/product.module').then(m =>m.ProductModule)
+  },
+  {
       path: '**',
       redirectTo: '',
   },

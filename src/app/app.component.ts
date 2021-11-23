@@ -9,10 +9,13 @@ import { PrimeNGConfig } from 'primeng/api';
 })
 export class AppComponent implements OnInit{
 
+  isHomePage: boolean = true;
+
   constructor(private primengConfig: PrimeNGConfig){}
 
   ngOnInit(){
     this.primengConfig.ripple = true;
+    this.isHomePage = location.pathname === '/' ? true : false;
   }
 
   updatePWA(){
